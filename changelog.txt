@@ -1,0 +1,7 @@
+Fixed ISSUES.
+Added more of the source we missed!
+fixed crack not doing certain features
+
+Added a Combo Converter ;)
+
+#TEAMNIL OUT

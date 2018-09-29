@@ -1,0 +1,5 @@
+username=
+password=
+groupid=
+assetid=
+mcookie(Auto-Generated/Don't touch)=

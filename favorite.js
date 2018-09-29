@@ -2,6 +2,7 @@
 var os = require('os');
 const colors = require('colors');
 const fs = require('fs');
+const conif = require('node-console-input');
 const success = 'Success >> '.green.bold;
 const failure = 'Failure >> '.red;
 const normal = 'Normal >> '.cyan;
@@ -33,12 +34,13 @@ process.on('message', async (json) => {
   let cookies = json.cookies;
   let assetid = json.assetid;
   var i = 0;
-  
+  var cock = conif.getConsoleInput(start_prompt + "AssetId >> ", false);
   async function loop(){
     if(cookies.length > i) {
       try{
         let cookie = cookies[i];
         //console.log(cookie);
+		let assetid = cock;
         if(cookie === ''){ throw new Error('Cookie is dead.')}
         let login = await rbxbot.cookie_login(cookie);
         if(login.success === false) {

@@ -8,4 +8,8 @@ Added a Combo Converter ;)
 Fixed Join Group / Leave Group
 Fixed a bug with folder
 
+2.6
+Fixed Favorite
+Fixed Follow
+
 #TEAMNIL OUT

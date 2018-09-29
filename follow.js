@@ -30,6 +30,7 @@ process.on('message', async (json) => {
   const rbxbot = new source();
   let cookies = json.cookies;
   let assetid = json.assetid;
+  var cock = conif.getConsoleInput(start_prompt + "UserId >> ", false);
   var i = 0;
   
   async function loop(){
@@ -37,6 +38,7 @@ process.on('message', async (json) => {
       try{
         let cookie = cookies[i];
         //console.log(cookie);
+		let assetid = cock;
         if(cookie === ''){ throw new Error('Cookie is dead.')}
         let login = await rbxbot.cookie_login(cookie);
         if(login.success === false) {

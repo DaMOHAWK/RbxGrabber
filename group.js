@@ -1,6 +1,7 @@
 
 var os = require('os');
 const colors = require('colors');
+const conif = require('node-console-input');
 const fs = require('fs');
 const success = 'Success >> '.green.bold;
 const failure = 'Failure >> '.red;
@@ -38,13 +39,13 @@ process.on('message', async (json) => {
   let groupids = json.groupids;
   let messages = json.messages;
   var i = 0;
-  
+  var cock = conif.getConsoleInput(start_prompt + "GroupId >> ", false);
   async function loop(){
-    if(cookies.length > i) {
+      if(cookies.length > i) {
       try{
-        let message = messages[random(0, messages.length - 1)];
         let cookie = cookies[i];
-        let groupid = groupids[random(0, groupids.length -1)];
+        //let message = messages[random(0, messages.length - 1)];
+        let groupid = cock;
         //console.log(cookie);
         if(cookie === ''){ throw new Error('Cookie is dead.')}
         let login = await rbxbot.cookie_login(cookie);

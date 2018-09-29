@@ -19,7 +19,7 @@ var title = 'BLANK';
 
 var setTitle = require('console-title');
 
-setInterval(()=>{setTitle(`RbxGrabber Cracked By Pritunl & Twistyyy | ${checked}/${left} | [${title}: ${total}]`);});
+setInterval(()=>{setTitle(`RbxGrabber Cracked By Pritunl & Twistyyy [v2.5] | ${checked}/${left} | [${title}: ${total}]`);});
 
 const errmsg = 'Please send a screenshot of this error to Twistyyy#4775\n';
 cluster.setMaxListeners(10000000);
@@ -58,7 +58,7 @@ async function start_menu() {
       hwidcheck(id)
         .then(whitelisted => {
           if(whitelisted === true) {
-            log('Whitelisted & Cracked By Pritunl & Twistyyy');
+            log('Cracked By Pritunl & Twistyyy');
             
             let cookies_file_w = fs.createWriteStream('cookies.txt',{
               flags    : 'a',
